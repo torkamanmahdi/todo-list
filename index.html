@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Todo List</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+	<header class="pbt-2">
+		<h1>ToDo List</h1>
+	</header>
+
+	<main>
+
+		<section id="search">
+			<input type="search" placeholder="search ...." id="search">
+		</section>
+
+		<section id="display" class="pbt-2">
+			<div>
+				<input type="checkbox" id="done" checked> Show Done Task
+			</div>
+			<div>
+				<select id="sort">
+					<option value="byEdited">By Edited</option>
+					<option value="byCreated">By Created</option>
+				</select>
+			</div>
+		</section>
+
+		<div id="todo" class="pbt-2">
+			<div id="insert">
+				<h2>Insert</h2>
+				<div class="innerInsert">
+					<form id="add-todo" class="pbt-1">
+						<input type="text" name="writeTask" placeholder="write a task">
+						<button class="add">Add task</button>
+					</form>
+				</div>
+			</div>
+			<div id="list">
+				<h2>List</h2>
+				<div id="getTodo">
+					<div style="height: 1300px;"></div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<footer>© copyright 2021.</footer>
+	
+	<script src="app.js" defer></script>
+
+</body>
+</html>
